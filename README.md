@@ -1,7 +1,4 @@
-# eCommerce_Chatbot-Rasa_Python
-
-
-# e-Commerce Chatbot in Python
+# e-Commerce Chatbot in Rasa and Python
 Repo for the Chatbot (Virtual Assistant) implemented in Rasa and Python, which automates the customer service of an e-commerce website.
 
 * Possibility for the user to get from the chatbot:
