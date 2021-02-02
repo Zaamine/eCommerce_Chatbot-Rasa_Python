@@ -1,0 +1,152 @@
+version: "2.0"
+
+rules:
+
+- rule: Respond "How can I help you?" whenever the user chooses the "Additional help" button or says "Yes" (after each happy path)
+  steps:
+  - or:
+    - intent: choice_additionalHelp
+    - intent: affirm
+  - action: utter_howCanIhelpYou
+- rule: Respond "Do you want to provide feedback?" whenever the user chooses the "No more help" button or says "No" or says "Bye" (after each happy path)
+  steps:
+  - or:
+    - intent: choice_noMoreHelp
+    - intent: deny
+    - intent: goodbye
+  - action: utter_beforeYouGo
+  - action: utter_askToProvideFeedback
+- rule: Respond "Goodbye" whenever the user says "Bye" or "No" or says again "No more help" after we propose him to provide feedback (after each happy path)
+  steps:
+  - action: utter_askToProvideFeedback
+  - or:
+    - intent: deny
+    - intent: goodbye
+    - intent: choice_noMoreHelp
+  - action: utter_goodbye
+
+- rule: Says "goodbye" after "thanks for the feedback" (from Happy path 0)
+  steps:
+  - action: utter_feedbackProvided
+  - action: utter_goodbye
+- rule: Activate the otherFeedback_form (from happy path 0.2)
+  steps:
+  - intent: choice_otherFeedback
+  - action: otherFeedback_form
+  - active_loop: otherFeedback_form
+- rule: Submit the otherFeedback_form (from happy path 0.2)
+  condition:
+  - active_loop: otherFeedback_form
+  steps:
+  - action: otherFeedback_form
+  - active_loop: null
+  - action: action_insertNewFeedback
+  - action: utter_goodbye
+
+- rule: Respond to FAQs (from happy path 1)
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_askAdditionalHelp
+
+- rule: Activate the searchedProducts_form (from happy path 2)
+  steps:
+  - intent: choice_inform_about_product
+  - action: searchedProducts_form
+  - active_loop: searchedProducts_form
+- rule: Submit the searchedProducts_form (from happy path 2)
+  condition:
+  - active_loop: searchedProducts_form
+  steps:
+  - action: searchedProducts_form
+  - active_loop: null
+  - action: action_selectProductInformation
+  - action: utter_askAdditionalHelp
+
+- rule: Activate the userNewFirstName_form (from happy path 4.1 v2)
+  steps:
+  - intent: choice_changeUserFirstName
+  - action: userNewFirstName_form
+  - active_loop: userNewFirstName_form
+- rule: Submit the userNewFirstName_form (from happy path 4.1 v2)
+  condition:
+  - active_loop: userNewFirstName_form
+  steps:
+  - action: userNewFirstName_form
+  - active_loop: null
+  - action: action_updateUserFirstName
+  - action: utter_askAdditionalHelp
+
+- rule: Activate the userNewEmailAdress_form (from happy path 4.3 v2)
+  steps:
+  - intent: choice_changeUserEmailAdress
+  - action: userNewEmailAdress_form
+  - active_loop: userNewEmailAdress_form
+- rule: Submit the userNewEmailAdress_form (from happy path 4.3 v2)
+  condition:
+  - active_loop: userNewEmailAdress_form
+  steps:
+  - action: userNewEmailAdress_form
+  - active_loop: null
+  - action: action_updateUserEmailAdress
+  - action: utter_askAdditionalHelp
+
+- rule: Activate the productSuggestion_form (from happy path 5)
+  steps:
+  - intent: choice_suggest_product
+  - action: productSuggestion_form
+  - active_loop: productSuggestion_form
+- rule: Submit the productSuggestion_form (from happy path 5)
+  condition:
+  - active_loop: productSuggestion_form
+  steps:
+  - action: productSuggestion_form
+  - active_loop: null
+  - action: action_insertNewProductSuggestion
+  - action: utter_askAdditionalHelp
+
+- rule: Activate the customRequestEmailAdress_form (from happy path 6)
+  steps:
+  - intent: choice_custom_request
+  - action: utter_understandRequestCustomerService
+  - action: customRequestEmailAdress_form
+  - active_loop: customRequestEmailAdress_form
+- rule: Submit the customRequestEmailAdress_form and activate the customRequestText_form (from happy path 6)
+  condition:
+  - active_loop: customRequestEmailAdress_form
+  steps:
+  - action: customRequestEmailAdress_form
+  - active_loop: null
+  - action: action_insertNewMailForArequest
+  - action: customRequestText_form
+  - active_loop: customRequestText_form
+- rule: Submit the customRequestText_form (from happy path 6)
+  condition:
+  - active_loop: customRequestText_form
+  steps:
+  - action: customRequestText_form
+  - active_loop: null
+  - action: action_addNewCustomRequest
+  - action: utter_askAdditionalHelp
+
+- rule: Say "I am a bot" anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- rule: Respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+  - action: utter_askAdditionalHelp
+
+- rule: Respond to out_of_scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - action: utter_askAdditionalHelp
+
+- rule: Ask the user to rephrase in case of low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_rephrase

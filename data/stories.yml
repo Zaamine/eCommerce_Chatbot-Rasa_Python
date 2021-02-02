@@ -1,0 +1,220 @@
+version: "2.0"
+
+stories:
+
+- story: Happy path 0.1 - Provide feedback with buttons
+  steps:
+  - or:
+    - intent: choice_goodFeedback
+    - intent: choice_badFeedback
+  - action: utter_feedbackProvided
+  - action: utter_goodbye
+- story: Happy path 0.2 - Provide custom feedback with text input
+  steps:
+  - intent: choice_otherFeedback
+  - action: otherFeedback_form
+  - active_loop: otherFeedback_form
+  - active_loop: null
+  - action: action_insertNewFeedback
+  - action: utter_goodbye
+
+- story: Happy path 1 - Inform me about eCommerce
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - action: utter_howCanIhelpYou
+  - intent: choice_inform_about_eCommerce
+  - action: utter_inform_about_eCommerce
+  - intent: faq
+  - action: utter_faq
+  - action: utter_askAdditionalHelp
+
+- story: Happy path 2 - Inform about a particular product
+  steps:
+  - intent: choice_inform_about_product
+  - action: searchedProducts_form
+  - active_loop: searchedProducts_form
+  - active_loop: null
+  - action: action_selectProductInformation
+  - action: utter_askAdditionalHelp
+
+- story: Happy path 4.0 v1 - utter_changeAccountInfo if the user logs in after the chatbot says utter_pleaseLogIn or the user says that he is logged in and it is true
+  steps:
+  - action: utter_changeAccountInfoIfUserIsNotLoggedIn
+  - action: utter_pleaseLogIn
+  - intent: justLoggedInWhileChatting
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsLoggedIn: "userIsLoggedIn"
+  - action: utter_justLoggedInWhileChatting
+  - action: utter_changeAccountInfo
+
+- story: Happy path 4.0 v2 - utter_changeAccountInfoIfUserIsNotLoggedIn if the user logs out after the chatbot says utter_changeAccountInfo or the user says that he is logged out and it is true
+  steps:
+  - action: utter_changeAccountInfo
+  - intent: justLoggedOutWhileChatting
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsNotLoggedIn: "userIsNotLoggedIn"
+  - action: utter_justLoggedOutWhileChatting
+  - action: utter_changeAccountInfoIfUserIsNotLoggedIn
+  - action: utter_pleaseLogIn
+
+- story: Happy path 4 v1 - Choose to change account information / The user is not already logged in
+  steps:
+  - intent: choice_change_account_info
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsNotLoggedIn: "userIsNotLoggedIn"
+  - action: utter_changeAccountInfoIfUserIsNotLoggedIn
+  - action: utter_pleaseLogIn
+
+- story: Happy path 4 v2 - Choose to change account information / The user is already logged in
+  steps:
+  - intent: choice_change_account_info
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsLoggedIn: "userIsLoggedIn"
+  - action: utter_changeAccountInfo
+  - checkpoint: checkpoint_changeAccountInfo_userIsLoggedIn
+- story: Happy path 4.1 v2 - Change the first name
+  steps:
+  - checkpoint: checkpoint_changeAccountInfo_userIsLoggedIn
+  - intent: choice_changeUserFirstName
+  - action: userNewFirstName_form
+  - active_loop: userNewFirstName_form
+  - active_loop: null
+  - action: action_updateUserFirstName
+  - action: utter_askAdditionalHelp
+- story: Happy path 4.3 v2 - Change the email adress
+  steps:
+  - checkpoint: checkpoint_changeAccountInfo_userIsLoggedIn
+  - intent: choice_changeUserEmailAdress
+  - action: userNewEmailAdress_form
+  - active_loop: userNewEmailAdress_form
+  - active_loop: null
+  - action: action_updateUserEmailAdress
+  - action: utter_askAdditionalHelp
+
+- story: Happy path 5 - Suggest a product
+  steps:
+  - intent: choice_suggest_product
+  - action: productSuggestion_form
+  - active_loop: productSuggestion_form
+  - active_loop: null
+  - action: action_insertNewProductSuggestion
+  - action: utter_askAdditionalHelp
+
+- story: Happy path 6 - Custom request (First retrieve the email adress then add the actual request)
+  steps:
+  - intent: choice_custom_request
+  - action: utter_understandRequestCustomerService
+  - action: customRequestEmailAdress_form
+  - active_loop: customRequestEmailAdress_form
+  - active_loop: null
+  - action: action_insertNewMailForArequest
+  - action: customRequestText_form
+  - active_loop: customRequestText_form
+  - active_loop: null
+  - action: action_addNewCustomRequest
+  - action: utter_askAdditionalHelp
+
+- story: Happy path 1 [v2] - Inform me about eCommerce [After being asked for additional help]
+  steps:
+  - intent: choice_additionalHelp
+  - action: utter_howCanIhelpYou
+  - intent: choice_inform_about_eCommerce
+  - action: utter_inform_about_eCommerce
+  - intent: faq
+  - action: utter_faq
+  - action: utter_askAdditionalHelp
+- story: Happy path 2 [v2] - Inform about a particular product [After being asked for additional help]
+  steps:
+  - intent: choice_additionalHelp
+  - action: utter_howCanIhelpYou
+  - intent: choice_inform_about_product
+  - action: searchedProducts_form
+  - active_loop: searchedProducts_form
+  - active_loop: null
+  - action: action_selectProductInformation
+  - action: utter_askAdditionalHelp
+- story: Happy path 4 v1 [v2] - Choose to change account information / The user is not already logged in [After being asked for additional help]
+  steps:
+  - intent: choice_additionalHelp
+  - action: utter_howCanIhelpYou
+  - intent: choice_change_account_info
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsNotLoggedIn: "userIsNotLoggedIn"
+  - action: utter_changeAccountInfoIfUserIsNotLoggedIn
+  - action: utter_pleaseLogIn
+- story: Happy path 4 v2 [v2] - Choose to change account information / The user is already logged in [After being asked for additional help]
+  steps:
+  - intent: choice_additionalHelp
+  - action: utter_howCanIhelpYou
+  - intent: choice_change_account_info
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsLoggedIn: "userIsLoggedIn"
+  - action: utter_changeAccountInfo
+  - checkpoint: checkpoint_changeAccountInfo_userIsLoggedIn_afterAdditionalHelp
+- story: Happy path 4.1 v2 [v2] - Change the first name
+  steps:
+  - checkpoint: checkpoint_changeAccountInfo_userIsLoggedIn_afterAdditionalHelp
+  - intent: choice_changeUserFirstName
+  - action: userNewFirstName_form
+  - active_loop: userNewFirstName_form
+  - active_loop: null
+  - action: action_updateUserFirstName
+  - action: utter_askAdditionalHelp
+- story: Happy path 4.3 v2 [v2] - Change the email adress
+  steps:
+  - checkpoint: checkpoint_changeAccountInfo_userIsLoggedIn_afterAdditionalHelp
+  - intent: choice_changeUserEmailAdress
+  - action: userNewEmailAdress_form
+  - active_loop: userNewEmailAdress_form
+  - active_loop: null
+  - action: action_updateUserEmailAdress
+  - action: utter_askAdditionalHelp
+- story: Happy path 5 [v2] - Suggest a product [After being asked for additional help]
+  steps:
+  - intent: choice_additionalHelp
+  - action: utter_howCanIhelpYou
+  - intent: choice_suggest_product
+  - action: productSuggestion_form
+  - active_loop: productSuggestion_form
+  - active_loop: null
+  - action: action_insertNewProductSuggestion
+  - action: utter_askAdditionalHelp
+- story: Happy path 6 [v2] - Custom request (First retrieve the email adress then add the actual request) [After being asked for additional help]
+  steps:
+  - intent: choice_additionalHelp
+  - action: utter_howCanIhelpYou
+  - intent: choice_custom_request
+  - action: utter_understandRequestCustomerService
+  - action: customRequestEmailAdress_form
+  - active_loop: customRequestEmailAdress_form
+  - active_loop: null
+  - action: action_insertNewMailForArequest
+  - action: customRequestText_form
+  - active_loop: customRequestText_form
+  - active_loop: null
+  - action: action_addNewCustomRequest
+  - action: utter_askAdditionalHelp
+
+- story: Happy path 0 - Says "How can I help you ?" to the user [userJustLoggedIn in the middle]
+  steps:
+  - action: utter_howCanIhelpYou
+  - intent: justLoggedInWhileChatting
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsLoggedIn: "userIsLoggedIn"
+  - action: utter_howCanIhelpYou
+- story: Happy path 0 - Says "How can I help you ?" to the user [userJustLoggedOut in the middle]
+  steps:
+  - action: utter_howCanIhelpYou
+  - intent: justLoggedOutWhileChatting
+  - action: action_checkIfUserIsLoggedIn
+  - slot_was_set:
+    - userIsNotLoggedIn: "userIsNotLoggedIn"
+  - action: utter_howCanIhelpYou

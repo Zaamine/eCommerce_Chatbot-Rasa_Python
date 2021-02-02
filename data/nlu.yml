@@ -1,0 +1,2365 @@
+version: "2.0"
+
+nlu:
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - yep
+    - yepp
+    - okep
+    - okeps
+    - yup
+    - yupp
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+    - okay
+    - k
+    - alright
+    - go on
+    - proceed
+    - go
+    - keep going
+    - continue
+    - continu
+    - Accept
+    - Awesome!
+    - Good
+    - Great
+    - I accept
+    - I accept.
+    - I agree
+    - I am using it
+    - I changed my mind. I want to accept it
+    - I do
+    - I get it
+    - I guess so
+    - I have used it in the past
+    - I will
+    - I'd absolutely love that
+    - I'm sure I will!
+    - Nice
+    - OK
+    - Ofcourse
+    - Oh yes
+    - Oh, ok
+    - Ok
+    - Ok let's start
+    - Ok.
+    - Okay
+    - Okay!
+    - PLEASE
+    - SURE
+    - Sure
+    - Sweet
+    - That would be great
+    - YES
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep!
+    - Yepp
+    - Yes
+    - Yes I do
+    - Yes please
+    - Yes please!
+    - Yes, I accept
+    - Yes.
+    - Yup
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - alright, cool
+    - amayzing
+    - amazing!
+    - awesome
+    - awesome!
+    - confirm
+    - cool story bro
+    - definitely yes without a doubt
+    - done
+    - fair enough
+    - fcourse
+    - fine
+    - fuck yeah!
+    - go
+    - go ahead
+    - go for it
+    - going super well
+    - good.
+    - great
+    - great lets do that
+    - great!
+    - hell yeah
+    - hell yes
+    - hm, i'd like that
+    - how nice!
+    - i accept
+    - i agree
+    - i am!
+    - i want that
+    - i will!
+    - it is ok
+    - its okay
+    - ja
+    - ja cool
+    - ja thats great
+    - jo
+    - k
+    - kk
+    - lets do it
+    - lets do this
+    - not bad
+    - of course
+    - ofcoure i do
+    - ofcourse
+    - oh awesome!
+    - oh cool
+    - oh good !!
+    - oh super
+    - ok
+    - ok cool
+    - ok fine
+    - ok friend
+    - ok good
+    - ok great
+    - ok i accept
+    - ok sara
+    - ok, I behave now
+    - ok, I understood
+    - ok...
+    - okay
+    - okay cool
+    - okay sure
+    - okay..
+    - oki doki
+    - okie
+    - ook
+    - oui
+    - perfect
+    - please
+    - si
+    - sort of
+    - sure
+    - sure thing
+    - sure!
+    - that is cool
+    - that ok
+    - that sounds fine
+    - that's great
+    - thats fine
+    - thats good
+    - thats great
+    - top
+    - uh-huh
+    - very much
+    - well yes
+    - y
+    - ya
+    - ya cool
+    - ya go for it
+    - ya i want
+    - ya please
+    - ya thats cool
+    - yaah
+    - yap
+    - yaps
+    - yas
+    - yay
+    - ye
+    - ye splease
+    - yea
+    - yeah
+    - yeah do that
+    - yeah sure
+    - yeah'=
+    - yeah, why not
+    - yeeeeezzzzz
+    - yeeees
+    - yep
+    - yep i want that
+    - yep if i have to
+    - yep please
+    - yep that's nice
+    - yep thats cool
+    - yep, will do thank you
+    - yep. :/
+    - yes
+    - yes ...
+    - yes I do
+    - yes accept please
+    - yes baby
+    - yes cool
+    - yes give me information
+    - yes go ahead
+    - yes go for it
+    - yes great
+    - yes i accept
+    - yes i agree
+    - yes i have!
+    - yes it is
+    - yes it was okay
+    - yes of course
+    - yes pleae
+    - yes please
+    - yes please!
+    - yes pls
+    - yes sirfr
+    - yes that's great
+    - yes that's what i want
+    - yes you can
+    - yes'
+    - yes, I'd love to
+    - yes, cool
+    - yes, give me information, please
+    - yes,i am
+    - yes.
+    - yesh
+    - yess
+    - yessoo
+    - yesss
+    - yesssss
+    - yesyestyes
+    - yesyesyes
+    - yez
+    - yop
+    - you asked me a yes or no question, which i answered with yes
+    - you got me, I accept, if you want me to
+    - yres
+    - ys
+    - yup
+    - yyeeeh
+    - Okay cool
+    - ok..
+    - considering
+    - More a less
+    - cool beans
+    - sounds good!
+    - really
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - i don't want
+    - i don't want to
+    - nah
+    - nahh
+    - nein
+    - nop
+    - nopp
+    - I don't want to
+    - I don't want to give it to you
+    - I don't want to say
+    - I dont want to tell
+    - I'm not giving you my email address
+    - I'm not going to give it to you
+    - NEIN
+    - NO
+    - NO DON"T WANT THIS!
+    - Nah
+    - Neither
+    - Never
+    - Nevermind
+    - No
+    - No thank you
+    - No, not really.
+    - No, thank you
+    - No.
+    - Nopes
+    - Not really
+    - absolutely not
+    - decline
+    - definitely not
+    - deny
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+    - it is going pretty badly
+    - it sucks
+    - it sux
+    - na
+    - nah
+    - nah I'm good
+    - nah not for me
+    - nah, first time
+    - nah, i'm good
+    - nehi
+    - nein
+    - neither
+    - never
+    - never mind
+    - no
+    - no :(
+    - no I dont want
+    - no I haven't decided yet if I want to sign up
+    - no and no again
+    - no bots at all
+    - no go
+    - no i can't
+    - no i don't accept
+    - no i dont want to
+    - no i dont want to accept :P lol
+    - no i won't
+    - no ma'am
+    - no sir
+    - no sorry
+    - no thank s
+    - no thank you
+    - no thanks
+    - no way
+    - no you did it wrong
+    - no!!!!
+    - no, i hate it
+    - no, my frst time
+    - no, thank you
+    - no, thanks
+    - no, thankyou
+    - no. u r idiot
+    - non
+    - noooooooooo
+    - noooooooooooooooooooooooooooooooooooooooo
+    - nop
+    - nope
+    - nope!
+    - nope. i am good
+    - not going well at all
+    - not really
+    - not right now
+    - not yet
+    - nö
+    - sorry not right now
+    - still dont want to tell
+    - thanks but no thanks
+    - this sucks
+    - very bad
+    - I do not need help
+    - no stop
+    - stop it, i do not care!!!
+    - none of them
+    - I don't agree
+    - it's okay
+    - it's ok
+- intent: express_gratitude
+  examples: |
+    - thanks
+    - thank you
+    - ty
+    - thank
+    - i am greatful
+    - am greatful
+    - i'm greatful
+    - i am so greatful
+    - am so greatful
+    - i'm so greatful
+    - greatful
+    - you're the best
+    - you da best
+    - you are the best
+    - thanks yo
+    - tk
+    - tks
+    - Cool. Thanks
+    - Great, thanks
+    - Thank you
+    - Thank you Sara
+    - Thank you so much
+    - Thank's!
+    - Thanks
+    - Thanks bot
+    - Thanks for that
+    - Thanks!
+    - amazing, thanks
+    - cheers
+    - cheers bro
+    - cool thank you
+    - cool thanks
+    - cool, thanks
+    - danke
+    - great thanks
+    - ok thanks
+    - ok thanks sara
+    - ok thanks!
+    - perfect thank you
+    - thank u
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for the help
+    - thanks this is great news
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - yes thanks
+    - thanks for your information
+    - thanks f
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - what's up
+    - what's up bro
+    - what's up girl
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello
+    - hola
+    - bonjour
+    - Bom dia
+    - wesh bien ou quoi
+    - wesh
+    - wesh le s
+    - wesh le sang
+    - cousin!
+    - Bonjour
+    - Good Morning
+    - Good morning
+    - Good mourning
+    - Guten Morgen
+    - HELLO
+    - HEY
+    - HEllo
+    - HI
+    - Hallo
+    - Hei
+    - Hellllooooooo
+    - Hello
+    - Hello Bot
+    - Hello!
+    - Hey
+    - Hey bot
+    - Heya
+    - Heylo
+    - Hi
+    - Hi bot
+    - Hi man
+    - Hi there
+    - Hi!
+    - Hi'
+    - Hi,
+    - Hi, bot
+    - Hieee
+    - Hieeeeeeeeeeeee
+    - Hola
+    - I said, helllllloooooO!!!!
+    - Well hello there ;)
+    - What is up?
+    - Whats up
+    - Whats up my bot
+    - Whats up?
+    - ayyyy whaddup
+    - bonjour
+    - ey boss
+    - good evening
+    - good moring
+    - good morning
+    - greet
+    - greetings
+    - hai
+    - hallo
+    - halloo
+    - halloooo
+    - halo
+    - heeey
+    - heelio
+    - hell9o
+    - hellio
+    - hello
+    - hello everybody
+    - hello friend
+    - hello hi
+    - hello is anybody there
+    - hello it is me again
+    - hello robot
+    - hello sweatheart
+    - hello sweet boy
+    - hello there
+    - hello world
+    - hello?
+    - hello]
+    - hellooo
+    - helloooo
+    - helo
+    - hey
+    - hey bot
+    - hey bot!
+    - hey dude
+    - hey hey
+    - hey let's talk
+    - hey rasa
+    - hey ther
+    - hey there
+    - hey there boy
+    - hey there..
+    - hey, let's talk
+    - heya
+    - heyho
+    - heyo
+    - hhola
+    - hi
+    - hi !
+    - hi Mister
+    - hi again
+    - hi can you speak ?
+    - hi folks
+    - hi friend
+    - hi friends
+    - hi hi
+    - hi pal!
+    - hi there
+    - hi there it's me
+    - hi!
+    - hi.........................................................
+    - hi?
+    - hieee
+    - hii
+    - hiihihi
+    - hiii
+    - hlo
+    - hola
+    - howdy
+    - jojojo
+    - jop
+    - konichiwa
+    - merhaba
+    - salam
+    - salem
+    - selem
+    - ola
+    - rasa hello
+    - salut
+    - sup
+    - wasssup
+    - wasssup!
+    - what up
+    - whats popping
+    - whats up
+    - yo
+    - yoo
+    - ssup?
+    - helleo
+    - ahoy
+    - Ahoy
+    - Ahoy!
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Bye
+    - Bye bye
+    - adios
+    - adios?
+    - bye .
+    - bye :P
+    - bye bot
+    - bye bye
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodbye
+    - goodbye.
+    - goodnight
+    - gotta go
+    - k byyye #slay
+    - ok Bye
+    - ok bye
+    - ok, bye
+    - ok.bye
+    - see u later
+    - see ya
+    - see you
+    - see you . bye
+    - take care
+    - then bye
+    - tlak to you later
+    - Exit
+    - Close this talk
+    - byr
+
+- intent: choice_additionalHelp
+  examples: |
+    - i need more help
+    - need more help
+    - more help
+    - additional help
+    - further help
+    - i need more help please
+    - need more help please
+    - more help please
+    - additional help please
+    - further help please
+    - i need more help pls
+    - need more help pls
+    - more help pls
+    - additional help pls
+    - further help pls
+    - i want more help
+    - i want additional help
+    - i want further help
+    - i want some more help
+    - i want some additional help
+    - i want some further help
+    - i want more help please
+    - i want additional help please
+    - i want further help please
+    - i want more help pls
+    - i want additional help pls
+    - i want further help pls
+    - i need something else
+    - i need smtg else
+    - i want something else
+    - i want smtg else
+    - something else
+    - smtg else
+- intent: choice_noMoreHelp
+  examples: |
+    - i don't need help anymore
+    - i don't need help
+    - i don't need further help
+    - i don't need anymore help
+    - i don't additional help
+    - no more help
+    - no additional help
+    - no further help
+    - no help anymore
+    - no further help needed
+    - no additional help needed
+    - no more help needed
+
+- intent: choice_badFeedback
+  examples: |
+    - bad
+    - not good
+    - awful
+    - terrible
+    - unpleasant
+    - poor
+    - inferior
+    - second-rate
+    - second-class
+    - inadequate
+    - unacceptable
+    - deficient
+    - not ethical
+    - it's bad
+    - it's not good
+    - it's awful
+    - it's terrible
+    - it's unpleasant
+    - it's poor
+    - it's inferior
+    - it's second-rate
+    - it's second-class
+    - it's inadequate
+    - it's unacceptable
+    - it's deficient
+    - it's not ethical
+    - you are bad
+    - you are not good
+    - you are awful
+    - you are terrible
+    - you are unpleasant
+    - you are poor
+    - you are inferior
+    - you are second-rate
+    - you are second-class
+    - you are inadequate
+    - you are unacceptable
+    - you are deficient
+    - you are not ethical
+    - you're bad
+    - you're not good
+    - you're awful
+    - you're terrible
+    - you're unpleasant
+    - you're poor
+    - you're inferior
+    - you're second-rate
+    - you're second-class
+    - you're inadequate
+    - you're unacceptable
+    - you're deficient
+    - you're not ethical
+- intent: choice_goodFeedback
+  examples: |
+    - good
+    - really good
+    - fine
+    - of high quality
+    - high quality
+    - of high standard
+    - high standard
+    - quality
+    - superior
+    - satisfactory
+    - acceptable
+    - adequate
+    - right-minded
+    - examplary
+    - clean
+    - ethical
+    - upstanding
+    - outstanding
+    - awesome
+    - great
+    - up to standard
+    - in order
+    - up to the mark
+    - it's good
+    - it's really good
+    - it's fine
+    - it's of high quality
+    - it's high quality
+    - it's of high standard
+    - it's high standard
+    - it's quality
+    - it's superior
+    - it's satisfactory
+    - it's acceptable
+    - it's adequate
+    - it's right-minded
+    - it's examplary
+    - it's clean
+    - it's ethical
+    - it's upstanding
+    - it's outstanding
+    - it's awesome
+    - it's great
+    - it's up to standard
+    - it's in order
+    - it's up to the mark
+    - you are good
+    - you are really good
+    - you are fine
+    - you are of high quality
+    - you are high quality
+    - you are of high standard
+    - you are high standard
+    - you are quality
+    - you are superior
+    - you are satisfactory
+    - you are acceptable
+    - you are adequate
+    - you are right-minded
+    - you are examplary
+    - you are clean
+    - you are ethical
+    - you are upstanding
+    - you are outstanding
+    - you are awesome
+    - you are great
+    - you are up to standard
+    - you are in order
+    - you are up to the mark
+    - you're good
+    - you're really good
+    - you're fine
+    - you're of high quality
+    - you're high quality
+    - you're of high standard
+    - you're high standard
+    - you're quality
+    - you're superior
+    - you're satisfactory
+    - you're acceptable
+    - you're adequate
+    - you're right-minded
+    - you're examplary
+    - you're clean
+    - you're ethical
+    - you're upstanding
+    - you're outstanding
+    - you're awesome
+    - you're great
+    - you're up to standard
+    - you're in order
+    - you're up to the mark
+- intent: choice_otherFeedback
+  examples: |
+    - other
+    - i want to write another feedback
+    - i want to provide another feedback
+    - i want to give another feedback
+    - other feedback
+    - another type of feedback
+    - another feedback
+    - my own feedback
+    - own feedback
+    - i want to write my own feedback
+    - i want to provide my own feedback
+    - i want to give my own feedback
+    - custom feedback
+    - i want to write a custom feedback
+    - i want to provide a custom feedback
+    - i want to give a custom feedback
+    - can i write my feedback
+    - can i write the feedback
+    - can i write it
+    - can i write it down
+    - can i write it myself
+    - can i write it down myself
+    - i want to write my feedback
+    - i want to write the feedback
+    - i want to write it
+    - i want to write it down myself
+    - i want to type my feedback
+    - i want to type the feedback
+    - i want to type it
+    - i want to type it myself
+    - can i type it myself
+    - i want to type it in the chat
+    - i want to write it in the chat
+    - i want to give my feedback in the chat
+    - i want to give my feedback myself
+    - i want to give thg feedback in the chat
+    - i want to give the feedback myself
+    - i want to give it
+    - i want to give it myself
+
+- intent: choice_custom_request
+  examples: |
+    - make another request
+    - make a request
+    - make a custom request
+    - formulate a request
+    - formulate a custom request
+    - custom request
+    - i want to make another request
+    - i want to make a request
+    - i want to make a custom request
+    - can you notify me?
+    - can i be notified?
+    - will i be notified
+    - can i leave you my contact information?
+    - can i send you my contact information?
+    - can i leave you my details?
+    - can i send you my details?
+    - can you contact me later?
+    - can you get back to me later?
+    - can you get back to me?
+    - i want to be notified later
+    - i want to be notified
+    - notify me
+    - notify me later
+    - let's talk later pls
+    - let's talk later please
+    - i prefer to talk later
+    - we will talk later
+    - we will talk later my friend
+    - can we talk later my friend
+    - can we talk later
+    - customer service
+    - i want to talk to the customer service
+    - i want to talk direclty the customer service
+    - i want to make a request to the customer service
+    - i want to make a request directly to the customer service
+    - put me trough the customer service
+    - customer care
+    - i want to talk to the customer care
+    - i want to talk direclty the customer care
+    - i want to make a request to the customer care
+    - i want to make a request directly to the customer care
+    - put me trough the customer care
+
+- intent: give_firstName
+  examples: |
+    - my first name is [Amine](first_name)
+    - [Rime](first_name)
+    - here : [Leo](first_name)
+    - here is my first name : [Maxence](first_name)
+    - here [Hugo](first_name)
+    - here is my first name [Yanis](first_name)
+    - they call me [Hind](first_name)
+    - people call me [Saad](first_name)
+    - i am called [Azzedine](first_name)
+    - i'm called [Badiaa](first_name)
+    - my friends often call me [Samia](first_name)
+    - i think that my name is [Simo](first_name)
+    - yes, it's [Ali](first_name)
+    - i remember, it is [Nahid](first_name)
+    - yes, [Ghali](first_name)
+    - here it is : [Kamil](first_name)
+    - [Lylia](first_name)
+    - [Shemsy](first_name)
+    - [Adrien](first_name) is my name
+    - [Antoine](first_name) is my first name
+    - [Reda](first_name) is what my parents have told me
+    - [Edgar](first_name) is my name
+    - the name is [Benoit](first_name)
+    - [Valentin](first_name) should be enough
+    - my name is [Salma](first_name)
+    - m name is [Kenza](first_name)
+    - [Issam](first_name) is what my parents call me
+    - [Anass](first_name)
+    - [Ines](first_name)
+    - [Benjamin](first_name)
+    - everyone calls me [Flores](first_name)
+    - [Hasnaa](first_name)
+    - [Rayane](first_name)
+    - [Oussama](first_name)
+    - [Hamza](first_name)
+    - [Abdeslam](first_name)
+    - [Bibiss](first_name)
+    - [Chakir](first_name)
+    - [Younes](first_name)
+    - [Ali](first_name)
+    - [Chakir](first_name)
+    - [Othmane](first_name)
+    - [Dina](first_name)
+    - [Aimée](first_name)
+    - [Antoinette](first_name)
+    - [Bernadette](first_name)
+    - [Blanche](first_name)
+    - [Camille](first_name)
+    - [Charlotte](first_name)
+    - [Chloe](first_name)
+    - [Claire](first_name)
+    - [Clementine](first_name)
+    - [Danielle](first_name)
+    - [Denise](first_name)
+    - [Dominique](first_name)
+    - [Elaine](first_name)
+    - [Fleur](first_name)
+    - [Francine](first_name)
+    - [Gabrielle](first_name)
+    - [Genevieve](first_name)
+    - [Ginette](first_name)
+    - [Giselle](first_name)
+    - [Jacqueline](first_name)
+    - [Jeanne](first_name)
+    - [Josephine](first_name)
+    - [Juliette](first_name)
+    - [Lorraine](first_name)
+    - [Louise](first_name)
+    - [Lucie](first_name)
+    - [Madeleine](first_name)
+    - [Mallory](first_name)
+    - [Manon](first_name)
+    - [Margot](first_name)
+    - [Marie](first_name)
+    - [Michelle](first_name)
+    - [Monique](first_name)
+    - [Nicolette](first_name)
+    - [Noel](first_name)
+    - [Pauline](first_name)
+    - [Zoe](first_name)
+    - [Clemence](first_name)
+    - [Noemie](first_name)
+    - [Coline](first_name)
+    - [Agathe](first_name)
+    - [Yasmine](first_name)
+    - [Samira](first_name)
+    - [Rabiaa](first_name)
+    - [Zeyna](first_name)
+    - [Hiba](first_name)
+    - [Romane](first_name)
+    - [Altinai](first_name)
+    - [Ludivine](first_name)
+    - [Priscille](first_name)
+    - [Clara](first_name)
+    - [Carla](first_name)
+    - [Emma](first_name)
+    - [Paul](first_name)
+    - [Axel](first_name)
+    - [Alexis](first_name)
+    - [Nazih](first_name)
+    - [Odon](first_name)
+    - [Ludovic](first_name)
+    - [Hervé](first_name)
+    - [Mohammad](first_name)
+    - [Artiom](first_name)
+    - [Joe](first_name)
+    - [Walid](first_name)
+    - [Zakaria](first_name)
+    - [Chaimaa](first_name)
+    - [Ahlam](first_name)
+    - [Majda](first_name)
+    - [Idrid](first_name)
+    - [Hublot](first_name)
+    - [Ferhat](first_name)
+    - [Simon](first_name)
+    - [Anissa](first_name)
+    - [Ayoub](first_name)
+    - [Abdelhalim](first_name)
+    - [Fayçal](first_name)
+    - [Ibrahim](first_name)
+    - [Alpha](first_name)
+    - [Haytham](first_name)
+    - [Adil](first_name)
+    - [Latif](first_name)
+    - [Redouane](first_name)
+    - [Raouf](first_name)
+    - [Youness](first_name)
+    - [Moussa](first_name)
+    - [Imane](first_name)
+    - [Trevor](first_name)
+    - [Mohamed](first_name)
+    - [Thomas](first_name)
+    - [Rihab](first_name)
+    - [Nassim](first_name)
+    - [Martin](first_name)
+    - [Hamza](first_name)
+    - [Iliasse](first_name)
+    - [Hicham](first_name)
+    - [Maroun](first_name)
+    - [Aurelien](first_name)
+    - [Maha](first_name)
+    - [Khaled](first_name)
+    - [Coralie](first_name)
+    - [Henri](first_name)
+    - [Lahcene](first_name)
+    - [Hamza](first_name)
+    - [Anthony](first_name)
+    - [Julien](first_name)
+    - [Laurine](first_name)
+    - [Mounir](first_name)
+    - [Abderrahmane](first_name)
+    - [Valentina](first_name)
+    - [Marine](first_name)
+    - [Telian](first_name)
+    - [Ouissam](first_name)
+    - [Mejdi](first_name)
+    - [Malik](first_name)
+    - [Kader](first_name)
+    - [Nawel](first_name)
+    - [Sarah](first_name)
+    - [Rami](first_name)
+    - [Hedy](first_name)
+    - [Elisa](first_name)
+    - [Mouloud](first_name)
+    - [Pierrick](first_name)
+    - [Mazigh](first_name)
+    - [Remi](first_name)
+    - [Hakim](first_name)
+    - [Mathieu](first_name)
+    - [Badr](first_name)
+    - [Nour](first_name)
+    - [Noor](first_name)
+    - [Sonia](first_name)
+    - [Nicolas](first_name)
+    - [Emile](first_name)
+    - [Corentin](first_name)
+    - [Heloise](first_name)
+    - [Ramdane](first_name)
+    - [Cecile](first_name)
+    - [Alicia](first_name)
+    - [Baptiste](first_name)
+    - [Hafsa](first_name)
+    - [Guillaume](first_name)
+    - [Raquel](first_name)
+    - [Sophie](first_name)
+    - [Laure](first_name)
+    - [Fadwa](first_name)
+    - [Patrick](first_name)
+    - [Helena](first_name)
+    - [Laure-Helene](first_name)
+    - [Salome](first_name)
+    - [David](first_name)
+    - [Maurice](first_name)
+    - [Youssef](first_name)
+
+- regex: email_adress
+  examples: |
+    - (?:[a-z0-9!#$%&'*+\=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\=?^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
+- intent: give_emailAdress
+  examples: |
+    - my email adress is [example@mail.com](email_adress)
+    - my mail adress is [example@domain.com](email_adress)
+    - my mail is [e.xample@mail.com](email_adress)
+    - my e-mail adress is [example@mail.fr](email_adress)
+    - my e-mail is [example@domain.fr](email_adress)
+    - [e.xample@mail.fr](email_adress)
+    - [exampl.e@mail.fr](email_adress)
+    - [exampl.e@mail.com](email_adress)
+    - email adress is [for1.example2@mail.com](email_adress)
+    - please send it to [for.example@domain.com](email_adress)
+    - pls send it to [example.for@website.com](email_adress)
+    - [someone@something.us](email_adress)
+    - [somebody@something.de](email_adress)
+    - [thing@other.ma](email_adress)
+    - [people@firm.it](email_adress)
+    - here : [instance@host.net](email_adress)
+    - here is my email adress : [someone123456789@stuff.me](email_adress)
+    - here [for@example.mc](email_adress)
+    - here is my email adress [for@instance.pt](email_adress)
+    - [maybe@trick.es](email_adress) is my adress
+    - [excuse@me.cn](email_adress) is my email
+    - [love@ploy.lb](email_adress) is my email adress
+    - [sample@gizmo.trick.com](email_adress), contact me here
+    - [case@model.illustration.fr](email_adress), contact-me here
+    - it's [ideal.examplar@schema.com](email_adress)
+    - [such@as.examples.net](email_adress)
+    - [instance.s@ho.st.com](email_adress)
+    - [alright123@tip.giz.se](email_adress)
+    - [aaa.bbb@ccc.ddd.com](email_adress)
+    - [a.bcdefg@hijkl.com](email_adress)
+    - [EXample.azerty@cdefg.com](email_adress)
+    - [EXample@nbvcx.com](email_adress)
+    - [mail.adress@domain.host.com](email_adress)
+    - [mail456.adress@domain.host.com](email_adress)
+    - [mail789.adress123@domain.host.com](email_adress)
+    - [mail.adress159@domain.host.com](email_adress)
+    - [mail734@host.com](email_adress)
+    - [mail238.adress@domain.com](email_adress)
+    - [mail.adress146@domain.com](email_adress)
+    - [mail256.adress357@host.com](email_adress)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am i talking to a bot?
+    - am i talking to a human?
+    - bot?
+    - human?
+    - who are you?
+    - who am i talking to?
+    - who you are?
+    - who you're?
+    - you are?
+    - you're?
+    - i don't know you
+    - do i know you?
+    - what do you want?
+    - you want?
+    - why are you talking to me?
+    - why you talking to me?
+    - Ar you a bot ?
+    - Are you a bot
+    - Are you a chat bot?
+    - Are you the bot?
+    - Hi there, are you the bot?
+    - are you a BOT
+    - are you a Skynet ?
+    - are you a bot
+    - are you a bot ?
+    - are you a bot?
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you rasa bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+    - are you really a bbot?
+    - hey are you human
+    - are u human
+    - r u a human
+    - are you real human?
+    - you are a human
+    - Rara, are you a human?
+    - you are bot or human?
+    - are you human
+    - ok, i know i confused you there being a human! :)
+    - you are human or bot
+    - Are you human?
+    - are you a human ?
+    - Are you human ?
+    - Are you a human being?
+    - sara, are you a robot or human?
+    - r u real?
+    - are you a real person
+    - are u a real person?
+    - Are you a real person?
+    - are you a real person?
+    - are you real person or chat bot?
+    - So I'm here Today to ask one very simple question, what are you ?
+    - you sound like a real human
+    - wow you sound like real human
+    - are you human ?
+
+- intent: choice_inform_about_eCommerce
+  examples: |
+    - inform me about the firm
+    - inform me about the company
+    - inform me about the shop
+    - inform me about the store
+    - inform me about the local store
+    - inform me about the convenience store
+    - inform me about the boutique
+    - inform me about the website
+    - inform me about the e-commerce website
+    - inform me about eCommerce's website
+    - inform me about the application
+    - inform me about the app
+    - inform me about the commerce
+    - info about the firm
+    - info about the company
+    - info about the shop
+    - info about the store
+    - info about the local store
+    - info about the convenience store
+    - info about the boutique
+    - info about the website
+    - info about the e-commerce website
+    - info about the application
+    - info about the app
+    - info about the commerce
+    - more info
+    - more info about eCommerce
+    - inform company
+    - more information
+    - more info company
+    - about eCommerce
+    - about the firm
+    - what is eCommerce?
+    - what's eCommerce?
+    - what eCommerce?
+    - eCommerce?
+    - what's this firm about?
+    - what is this firm about?
+- intent: faq/eCommerce_info
+  examples: |
+    - general information about eCommerce
+    - general information about the firm
+    - general information about the company
+    - general information about the shop
+    - general information about the store
+    - general information about the local store
+    - general information about the convenience store
+    - general information about the boutique
+    - general information about the website
+    - general information about the e-commerce website
+    - general information about the application
+    - general information about the app
+    - general information about the commerce
+    - about eCommerce in general
+    - about the firm in general
+    - about the company in general
+    - about the shop in general
+    - about the store in general
+    - about the local storen in general
+    - about the convenience store in general
+    - about the boutique in general
+    - about the website in general
+    - about the e-commerce website in general
+    - about the application in general
+    - about the app in general
+    - about the commerce in general
+    - general information
+    - in general
+- intent: faq/creator
+  examples: |
+    - who created eCommerce?
+    - who created the firm?
+    - who created the company?
+    - who created the shop?
+    - who created the store?
+    - who created the local store?
+    - who created the convenience store?
+    - who created the boutique?
+    - who created the website?
+    - who created the e-commerce website?
+    - who created the application?
+    - who created the app?
+    - who created the commerce?
+    - who is the creator of eCommerce?
+    - who is the founder?
+    - who is the creator?
+    - who is the designer?
+    - who is the inventor?
+    - who is the maker?
+    - who is the author?
+    - who is the originator?
+    - eCommerce creator?
+    - creator?
+    - about eCommerce creator?
+    - more information about eCommerce creator?
+    - inform me about eCommerce creator
+    - who created eCommerce?
+    - who is the creator of eCommerce?
+    - eCommerce creator?
+    - creator?
+    - about eCommerce creator?
+    - more information about eCommerce creator?
+    - inform me about eCommerce creators
+- intent: faq/customer_service_number
+  examples: |
+    - what is the number of the customer service?
+    - what is the number of the customer care?
+    - what is the number of the client service?
+    - what is the number of the service department?
+    - what's the number of the customer service?
+    - customer service number?
+    - what's the number of the customer care?
+    - customer care number?
+- intent: faq/when_was_eCommerce_created
+  examples: |
+    - when was eCommerce created?
+    - when was the firm created?
+    - when was the company created?
+    - when was the store created?
+    - when was the shop created?
+    - when was the boutique created?
+    - when was eCommerce founded?
+    - when was the firm founded?
+    - when was the company founded?
+    - when was the store founded?
+    - when was the shop founded?
+    - when was the boutique founded?
+    - eCommerce creation time?
+    - firm creation time?
+    - company creation time?
+    - store creation time?
+    - shop creation time?
+    - boutique creation time?
+    - eCommerce foundation time?
+    - firm foundation time?
+    - company foundation time?
+    - store foundation time?
+    - shop foundation time?
+    - boutique foundation time?
+    - how long ago was eCommerce created?
+    - how long ago was the firm created?
+    - how long ago was the company created?
+    - how long ago was the store created?
+    - how long ago was the shop created?
+    - how long ago was the boutique created?
+    - how long ago was eCommerce founded?
+    - how long ago was the firm founded?
+    - how long ago was the company founded?
+    - how long ago was the store founded?
+    - how long ago was the shop founded?
+    - how long ago was the boutique founded?
+    - eCommerce creation how long ago?
+    - firm creation how long ago?
+    - company creation how long ago?
+    - store creation how long ago?
+    - shop creation how long ago?
+    - boutique creation how long ago?
+    - eCommerce foundation how long ago?
+    - firm foundation how long ago?
+    - company foundation how long ago?
+    - store foundation how long ago?
+    - shop foundation how long ago?
+    - boutique foundation how long ago?
+    - date eCommerce was created?
+    - date the firm was created?
+    - date the company was created?
+    - date the store was created?
+    - date the shop was created?
+    - date the boutique was created?
+    - date eCommerce was founded?
+    - date the firm was founded?
+    - date the company was founded?
+    - date the store was founded?
+    - date the shop was founded?
+    - date the boutique was founded?
+    - date of eCommerce creation?
+    - date of the firm creation?
+    - date of the company creation?
+    - date pf the store creation?
+    - date of the shop creation?
+    - date of the boutique creation?
+    - date of eCommerce foundation?
+    - date of the firm foundation?
+    - date of the company foundation?
+    - date of the store foundation?
+    - date of the shop foundation?
+    - date of the boutique foundation?
+    - date of creation of eCommerce
+    - date of creation of the firm
+    - date of creation of the company
+    - date of creation of the store
+    - date of creation of the shop
+    - date of creation of the boutique
+    - date of foundation of eCommerce
+    - date of foundation of the firm
+    - date of foundation of the company
+    - date of foundation of the store
+    - date of foundation of the shop
+    - date of foundation of the boutique
+
+- intent: choice_suggest_product
+  examples: |
+    - i want to suggest a product
+    - i want to suggest something
+    - i want to suggest smtg
+    - suggest product
+    - suggest a product
+    - suggest something
+    - suggest smtg
+    - product suggestion
+    - suggestion
+    - i want to make a product suggestion
+    - i want to make a suggestion
+    - can i make a suggestion
+    - can i suggest a product
+    - can i suggest something
+    - can i suggest smtg
+
+- intent: choice_inform_about_product
+  examples: |
+    - inform me about a product
+    - inquire me about a product
+    - inform me about a product please
+    - inquire me about a product please
+    - inform me about a product pls
+    - inquire me about a product pls
+    - i want to be informed about a product
+    - i want to be inquired about a product
+    - i want to be informed about a product please
+    - i want to be inquired about a product please
+    - i want to be informed about a product pls
+    - i want to be inquired about a product pls
+    - inform me about some product
+    - inquire me about some product
+    - inform me about some product please
+    - inquire me about some product please
+    - inform me about some product pls
+    - inquire me about some product pls
+    - i want to be informed about some product
+    - i want to be inquired about some product
+    - i want to be informed about some product please
+    - i want to be inquired about some product please
+    - i want to be informed about some product pls
+    - i want to be inquired about some product pls
+    - inform me about your products
+    - inquire me about your products
+    - inform me about your products please
+    - inquire me about your products please
+    - inform me about your products pls
+    - inquire me about your products pls
+    - i want to be informed about your products
+    - i want to be inquired about your products
+    - i want to be informed about your products please
+    - i want to be inquired about your products please
+    - i want to be informed about your products pls
+    - i want to be inquired about your products pls
+    - inform me about the products
+    - inquire me about the products
+    - inform me about the products please
+    - inquire me about the products please
+    - inform me about the products pls
+    - inquire me about the products pls
+    - i want to be informed about the products
+    - i want to be inquired about the products
+    - i want to be informed about the products please
+    - i want to be inquired about the products please
+    - i want to be informed about the products pls
+    - i want to be inquired about the products pls
+
+- intent: choice_change_account_info
+  examples: |
+    - change my account information
+    - change my account information in eCommerce
+    - change my account information in the website
+    - change my account info
+    - change my account in eCommerce
+    - change my account in the website
+    - change my information
+    - change my information in eCommerce
+    - change my information in the website
+    - change my info
+    - change my info in eCommerce
+    - change my info in the website
+    - i want to change my account information
+    - i want to change my account information in eCommerce
+    - i want to change my account information in the website
+    - i want to change my account info
+    - i want to change my account info in eCommerce
+    - i want to change my account info the website
+    - i want to change my information
+    - i want to change my information in eCommerce
+    - i want to change my information in the website
+    - i want to change my info
+    - i want to change my info in eCommerce
+    - i want to change my info in the website
+    - can i change my account information
+    - can i change my account information in eCommerce
+    - can i change my account information in the website
+    - can i change my account info
+    - can i change my account info in eCommerce
+    - can i change my account info the website
+    - can i change my information
+    - can i change my information in eCommerce
+    - can i change my information in the website
+    - can i change my info
+    - can i change my info in eCommerce
+    - can i change my info in the website
+- intent: choice_changeUserFirstName
+  examples: |
+    - my first name
+    - my first name in eCommerce
+    - my first name in the website
+    - my first name in my account
+    - my first name in my account information
+    - my first name in my account info
+    - my name
+    - my name in eCommerce
+    - my name in the website
+    - my name in my account
+    - my name in my account information
+    - my name in my account info
+    - i want to change my first name
+    - i want to change my first name in eCommerce
+    - i want to change my first name in the website
+    - i want to change my first name in my account
+    - i want to change my first name in my account information
+    - i want to change my first name in my account info
+    - i want to change my name
+    - i want to change my name in eCommerce
+    - i want to change my name in the website
+    - i want to change my name in my account
+    - i want to change my name in my account information
+    - i want to change my name in my account info
+    - can i change my first name in my account information
+    - can i change my first name in my account information in eCommerce
+    - can i change my first name in my account information in the website
+    - can i change my first name in my account info
+    - can i change my first name in my account info in eCommerce
+    - can i change my first name in my account info the website
+    - can i change my name in my account information
+    - can i change my name in my account information in eCommerce
+    - can i change my name in my account information in the website
+    - can i change my name in my account info
+    - can i change my name in my account info in eCommerce
+    - can i change my name in my account info the website
+- intent: choice_changeUserEmailAdress
+  examples: |
+    - my email adress
+    - my email adress in eCommerce
+    - my email adress in the website
+    - my email adress in my account
+    - my email adress in my account information
+    - my email adress in my account info
+    - my email
+    - my email in eCommerce
+    - my email in the website
+    - my email in my account
+    - my email in my account information
+    - my email in my account info
+    - i want to change my email adress
+    - i want to change my email adress in eCommerce
+    - i want to change my email adress in the website
+    - i want to change my email adress in my account
+    - i want to change my email adress in my account information
+    - i want to change my email adress in my account info
+    - i want to change my email
+    - i want to change my email in eCommerce
+    - i want to change my email in the website
+    - i want to change my email in my account
+    - i want to change my email in my account information
+    - i want to change my email in my account info
+    - can i change my email adress in my account information
+    - can i change my email adress in my account information in eCommerce
+    - can i change my email adress in my account information in the website
+    - can i change my email adress in my account info
+    - can i change my email adress in my account info in eCommerce
+    - can i change my email adress in my account info the website
+    - can i change my email in my account information
+    - can i change my email in my account information in eCommerce
+    - can i change my email in my account information in the website
+    - can i change my email in my account info
+    - can i change my email in my account info in eCommerce
+    - can i change my email in my account info the website
+
+- intent: choice_logIn
+  examples: |
+    - i want to log in
+    - i want to login
+    - log in
+    - log in?
+    - login
+    - login?
+    - connect
+    - connect ?
+    - can i log in?
+    - how to log in?
+    - can i login?
+    - how to login?
+    - how to connect to my account?
+    - log in pls
+    - login pls
+    - log in please
+    - login please
+    - connect pls
+    - connect please
+    - connect to my account please
+    - connect to my account
+    - connect to my account?
+    - can i connect to my account
+    - how to log in to my account?
+    - how to login to my account?
+    - how to sign in?
+    - connect to my an account pls
+    - log in to my account please
+    - login to my account please
+    - i want to log in on the website
+    - i want to login on the website
+    - i want to connect to my account on the website
+    - i want to log in
+    - i want to login
+    - i want to connect to my account
+    - i want to connect
+- intent: choice_createAnAccount
+  examples: |
+    - i want to register
+    - i want to create an account
+    - register
+    - register?
+    - registration
+    - registration?
+    - can i register?
+    - how to register?
+    - how to make a registration?
+    - register pls
+    - register please
+    - create an account
+    - create an account?
+    - can i create an account
+    - how to create an account?
+    - how to sign up?
+    - how to adhere?
+    - how to subscribe?
+    - how to enrol?
+    - how to enroll?
+    - create an account pls
+    - create an account please
+    - i want to register on the website
+    - i want to create an account on the website
+    - register on the website
+    - register on the website?
+    - can i register on the website?
+    - how to register on the website?
+    - register on the website pls
+    - register on the website please
+    - create an account on the website
+    - create an account on the website?
+    - can i create an account on the website
+    - how to create an accounton the website?
+    - create an account on the website pls
+    - create an account on the website please
+
+- intent: chitchat/ask_name
+  examples: |
+    - what is your name?
+    - what's your name?
+    - may I know your name?
+    - what do people call you?
+    - what can i call you?
+    - how can i call you?
+    - you are called?
+    - you're called?
+    - you called?
+    - do you have a name for yourself?
+    - you have a name?
+    - name?
+- intent: chitchat/ask_how_you_are
+  examples: |
+    - how are you?
+    - are you fine?
+    - you fine?
+    - are you okay?
+    - are you k?
+    - you okay?
+    - you k?
+    - are you ok?
+    - you ok?
+    - you good?
+    - what's up?
+    - what's up boy?
+    - what's up girl?
+    - fine and you?
+    - good and you?
+    - not good and you?
+    - fine you?
+    - good you?
+    - not good you?
+    - you?
+    - and you?
+    - fine and y?
+    - good and y?
+    - not good and y?
+    - fine y?
+    - good y?
+    - not good y?
+    - y?
+    - and y?
+    - yk?
+    - y k?
+    - y ok?
+    - y okay?
+    - Ahoy matey how are you?
+    - Are you ok?
+    - Do you feel good?
+    - Do you have a great day?
+    - HI Sara, what are you up to?
+    - Hi Sara! How are you?
+    - How are You?
+    - How are things?
+    - How are you
+    - How are you men?
+    - How are you today?
+    - How are you?
+    - How was your day?
+    - How you doing?
+    - How's it going
+    - How's it hanging?
+    - How's life treating you friend?
+    - How've you been?
+    - Hows it going
+    - I'm fine and you
+    - Is everything ok?
+    - What's going on?
+    - What's new?
+    - What's up
+    - What's up man
+    - and you
+    - are you alright
+    - are you happy
+    - are you having a good day
+    - are you ok
+    - are you okay
+    - h r u ?
+    - hello, how are you?
+    - hey how are you?
+    - hi how are you?
+    - hi how u doing
+    - hi sara, how are you?
+    - how ?
+    - how are things going
+    - how are things with you?
+    - how are u
+    - how are u?
+    - how are xou
+    - how are you
+    - how are you ?
+    - how are you doing
+    - how are you doing this morning
+    - how are you doing today my sweet friend
+    - how are you doing today?
+    - how are you doing?
+    - how are you feeling
+    - how are you today
+    - how are you'
+    - how are you?
+    - how are you????
+    - how are yuo
+    - how do you do?
+    - how have you been
+    - how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - how r u
+    - how r u ?
+    - how r u>
+    - how you doing
+    - how you doing?
+    - how's it going?
+    - how's life
+    - how's life been treating you?
+    - how's your day going
+    - howareyou
+    - hw r u?
+    - is everything all right
+    - is everything okay
+    - nah, I'm good - how are you doing?
+    - okay hi how are you?
+    - wassup>
+    - what about your day
+    - what are you up to?
+    - what's good
+    - what's up
+    - what's up sara
+    - what's up?
+    - whatchcha doing
+    - whatchya upto ?
+    - whats goin on
+    - whats new
+    - whatsapp
+    - yow are you
+    - how are you Rasa
+    - Hey Sara, how's it going
+    - are you cool
+- intent: chitchat/ask_who_won_us_elections
+  examples: |
+    - us president?
+    - who won the s.s. elections?
+    - who won the US elections?
+    - who won the elections in the United States?
+    - who won in the U.S?
+    - who won in the US?
+    - who won the elections?
+    - who won the 2020 elections?
+    - who's the winner?
+    - who is the winner?
+    - make america great again
+    - trump is the best
+    - trump the best
+    - trump winner
+    - trump for the win
+    - trump
+    - donald
+    - donald trump
+    - trump for president
+    - donald for president
+    - donald trump for president
+    - is donald the winner?
+    - is trump the winner?
+    - biden is the best
+    - biden the best
+    - biden winner
+    - biden for the win
+    - is joe the winner?
+    - is biden the winner?
+    - joe
+    - joe biden
+    - biden for president
+    - joe for president
+    - joe biden for president
+- intent: chitchat/ask_languages_bot
+  examples: |
+    - are you familiar with more than one language?
+    - can you communicate in any other languages?
+    - can you speak more than one language?
+    - do you know any other languages?
+    - do you know other languages?
+    - do you speak any other languages?
+    - how many different languages are you fluent in?
+    - how many languages are you familiar with?
+    - how many languages can you speak?
+    - how many languages do you have knowledge of?
+    - how many languages do you know?
+    - in what languages are you fluent enough?
+    - in which languages are you fluent?
+    - in which languages can you speak?
+    - speak any other languages?
+    - what are all of the different languages you can speak?
+    - what are the languages you can speak?
+    - what do you speak?
+    - what languages are you fluent in?
+    - what languages can you communicate in?
+    - what languages can you converse in?
+    - what languages can you use?
+    - what languages do you know how to use?
+    - what languages do you know?
+    - what languages do you speak?
+    - which languages are you familiar with?
+    - which languages do you speak?
+    - are you bilingual?
+    - are you multilingual?
+    - how many languages are you fluent in?
+    - tell me some languages you know?
+    - what foreign languages are you fluent in?
+    - what foreign languages do you know?
+    - what language do you use
+    - what languages are you comfortable speaking at?
+    - what languages are you familiar with?
+    - what languages are you good at speaking?
+    - what languages you are well versed?
+    - what languages you can be comfortable speaking?
+    - what languages you can handle well?
+    - what languages you can speak ?
+    - what languages you know?
+    - what languages you prefer more speaking at?
+    - which languages do you understand?
+    - i want to speak binary with you
+    - languages?
+    - Are you familiar with more than one language?
+    - Can you communicate in any other languages?
+    - Can you speak more than one language?
+    - Do you know any other languages?
+    - Do you know other languages?
+    - Do you speak [german](language)?
+    - Do you speak any other languages?
+    - Do you understand [spanish](language)?
+    - How many different languages are you fluent in?
+    - How many languages are you familiar with?
+    - How many languages can you speak?
+    - How many languages do you have knowledge of?
+    - How many languages do you know?
+    - In what languages are you fluent enough?
+    - In which languages are you fluent?
+    - In which languages can you speak?
+    - Speak any other languages?
+    - What are all of the different languages you can speak?
+    - What are the languages you can speak?
+    - What do you speak?
+    - What languages are you fluent in?
+    - What languages can you communicate in?
+    - What languages can you converse in?
+    - What languages can you use?
+    - What languages do you know how to use?
+    - What languages do you know?
+    - What languages do you speak?
+    - Which languages are you familiar with?
+    - Which languages do you speak?
+    - are you bilingual?
+    - are you multilingual?
+    - can you speak [Spanish](language)?
+    - can you speak in [italian](language)?
+    - do you know [chinese](language)
+    - do you speak [dutch](language)?
+    - do you speak [german](language)?
+    - do you speak any other languages?
+    - how many languages are you fluent in?
+    - how many languages do you know?
+    - tell me some languages you know?
+    - what else do you know besides [English](language)?
+    - what foreign languages are you fluent in?
+    - what foreign languages do you know?
+    - what language do you use
+    - what languages are you comfortable speaking at?
+    - what languages are you familiar with?
+    - what languages are you good at speaking?
+    - what languages do you know?
+    - what languages do you speak
+    - what languages you are well versed ?
+    - what languages you can be comfortable speaking?
+    - what languages you can handle well?
+    - what languages you can speak ?
+    - what languages you know?
+    - what languages you prefer more speaking at?
+    - which languages do you understand?
+    - you know [French](language)
+    - you speak [french](language) ?
+    - I want to speak binary with you
+    - ARE YOU [SPANISH](language)
+    - we cant converse in [french](language)?
+    - can we converse in [french](language)?
+    - Do you speak [italian](language)?
+- intent: chitchat/ask_time
+  examples: |
+    - can you give me the time?
+    - can you tell me the time?
+    - can you tell me what time it is?
+    - can you tell the time?
+    - could you tell me the time, please?
+    - could you tell me the time?
+    - could you tell me what time is it?
+    - do you have the time?
+    - do you know the time?
+    - do you know what time it is?
+    - excuse me, what time is it?
+    - give me the time
+    - hi, I need the time
+    - i need to know what time it is.
+    - pardon me, but do you know the time?
+    - tell me the time
+    - tell the time
+    - time, please!
+    - time?
+    - what is the current time?
+    - what is the exact time?
+    - what is the hour and minute right now?
+    - what is the time?
+    - what might the time be?
+    - what time do we have?
+    - what time have we got?
+    - what time is it right now?
+    - what's the current time?
+    - what's the time right now?
+    - what's the time?
+    - would you tell me what time it is?
+    - do you know the current time?
+    - tell me the current time
+    - tell me the time it is
+    - tell me what time you have
+    - that's true. do you know what time it is?
+    - what is the time ?
+    - what is time in us?
+    - what is time is us?
+    - what is time is usa?
+    - what time do you have?
+    - what time is it
+    - what time is it?
+    - what time it is
+    - what's the time
+    - whats the time now
+
+- intent: out_of_scope/non_english
+  examples: |
+    - wie fange ich mit Rasa an?
+    - hilf mir beim start
+    - tschüssikowski
+    - ¿Qué pasa?
+    - ça va?
+    - como te llamas
+    - wer bist Du?
+    - como inicio en rasa
+    - come stai?
+    - como estas
+    - de donde eres
+    - de que lugar eres?
+    - epdi iruka
+    - eres humana
+    - kalhmera sara ti kaneis
+    - kannst du auch deutsch?
+    - kannst du dies auch auf deutsch?
+    - j'ai besoin d'aide
+    - que puedes hacer?
+    - no hablo inglés
+    - no hablo ingles
+    - tu parles francais?
+    - francais
+    - francais?
+    - français?
+    - tudo bom
+    - tu pagal
+    - kannst du mir helfen
+    - tu kaisi he
+    - こにちは
+    - 日本語分かる？
+    - chào
+    - 你好
+    - i'm speaking a non-english language.
+    - i don't speak english
+    - i don't understand english
+    - no english
+    - chinese ok?
+    - 呵呵
+    - 我该如何使用
+    - 你懂中文吗？
+    - 您好
+    - 你叫什么名字
+    - 你是谁
+    - 中文
+    - kya hindi me bat kar sakate ho
+    - Dumme sara
+    - αστεία λές
+    - rasa codigo abierto
+    - 卧槽
+- intent: out_of_scope/other
+  examples: |
+    - i am asking you an out of scope question
+    - 4 + 2 = ?
+    - 4 + 2
+    - 1 + 1 = ?
+    - 1 + 1
+    - can i die
+    - can YouTube talk?
+    - can you call me back ?
+    - can you give me your datacenter's password
+    - can you give me your datacenter's password?
+    - can you please send me an uber
+    - do i have to accept?
+    - have we met before?
+    - i already told you! i'm a shitmuncher
+    - i am User
+    - i am an opioid addic
+    - i am an opioid addict
+    - i am trying to build one, and did some research before, but I have not do hand-on work yet
+    - i ned a GP in 94301
+    - i need a GP in 94301
+    - i need a girl friend!
+    - i wan to buy a plane
+    - i wanna marry you
+    - i want a new laptop
+    - i want book a hotel
+    - i want to die
+    - i want to use pipe
+    - i will check
+    - i'm a shitmuncher
+    - is today saturday?
+    - NLW
+    - nice name
+    - now?
+    - recharge
+    - the Try it out is not working
+    - the weather is good
+    - today
+    - try it out broken
+    - what day is it today?
+    - what do you prefer?
+    - what is todays date
+    - what is your hobbies?
+    - what's 1 + 1?
+    - what's do YouTube do
+    - what's your backend system?
+    - Who are your customers
+    - Why don’t you answer?
+    - won't you ask me how I am?
+    - you'r blue.
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - again?
+    - are the newsletter worth the subscription?
+    - are u facebook
+    - are u, facebook?
+    - are you single?
+    - are you dev?
+    - are you russian?
+    - are you sick
+    - are you vegan
+    - better than you
+    - book a ticket
+    - but I just told you that :(
+    - call me father
+    - can you cheer me up
+    - can you give me a cup of coffee
+    - can you help me with the docs?
+    - can you help me with your docs
+    - can you help me with your docs?
+    - can you learn from our conversation?
+    - can you speak about politic ?
+    - can you understand ?
+    - cannot see
+    - chgfhgh
+    - colder
+    - common, just try
+    - connect to alexa
+    - cr
+    - custom service
+    - did i break you
+    - do you believe in god?
+    - do you have a phone number?
+    - do you have your photo?
+    - do you know me
+    - do you know ras
+    - do you like football
+    - do you like movies
+    - do you sell vacuum robots?
+    - do you want to marry me?
+    - docs
+    - doctor
+    - everything
+    - genocide
+    - get me a club mate
+    - give me a girl friend
+    - go back
+    - google?
+    - great, I'd like to buy a house
+    - hang on let me find it
+    - help with my life
+    - hey little mama let em whisper in your ear
+    - how about NYC
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how many lines of codes
+    - how much is 10 + 89 ?
+    - how much is 10 + 89
+    - how to get rasa studio
+    - how to go to newyork ?
+    - i am hungry, what should i do?
+    - i am not a developer but need this for business
+    - i am qq
+    - i can't deal with _your_ request
+    - i hope you will be better
+    - i immediately need help with implementing the coolest bot you can imagine
+    - i m looking for job
+    - i told you already
+    - i wanna party
+    - i want good flycam
+    - i want more of you in my life!
+    - i want to book a hotel
+    - i want to buy a roomba for my grandson
+    - i want to find new friends
+    - i want to find out what you can build with rasa
+    - i want to fly
+    - i want to know current situtation in pakistan
+    - i want to see your happy customers
+    - i will tame a mouse for you
+    - is it a wasteland full of broken robot parts?
+    - is it allow to
+    - is rasa a studio?
+    - is rasa any good
+    - is that any of your business
+    - isn't the newsletter just spam?
+    - it's a pity
+    - license
+    - ljljl
+    - mascot means?
+    - more
+    - mountain
+    - my name k
+    - oh my god, not again!
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - personal or work?
+    - please play music
+    - really? you're so touchy?
+    - refresh
+    - region with no. of records
+    - search wikipedia
+    - shitmuncher
+    - show me a picture of a chicken
+    - silly bot
+    - sing me a song
+    - some thing else
+    - someone call the police i think the bot died
+    - sorry, i cannot rephrase
+    - tell me about yourself
+    - tell me more about next best action
+    - that doesn't sound like a joke
+    - the one that is better than you
+    - tricked ya
+    - turn off my stove
+    - umm
+    - wait a bit i am still reading
+    - what about wheather
+    - what are you doing now?
+    - what are your uses for universities
+    - what did you eat for lunch?
+    - what does your soul feel my friend
+    - what doing
+    - what else?
+    - what films do you like
+    - what is a discourse?
+    - what is a mascot
+    - what is adlingo
+    - what is evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are they?
+    - who is the MD of samsung bangalore ?
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dogs out
+    - who's Bill Gates?
+    - whta you think about gdpr?
+    - why do you need that?
+    - will u kill me
+    - will u kill me?
+    - winter is already leaving
+    - with you recommend me?
+    - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+    - you already have that
+    - you can learn how to make a coffe
+    - you have children?
+    - you have job opening
+    - you lock sweety
+    - you should learn to count
+    - you will know it from the single red rose it carries between its teeth
+    - ı am learning python
+    - CALL THE POLICE
+    - tertyryutyi
+    - wsdrcftvgybhnj
+    - why sky is blue?
+    - what kind of bird are you?
+    - contextua
+    - contextual
+    - talk to me about voulette
+    - voulette voulette
+    - do you have a demo?
+    - cars
+    - please voulette
+    - out of scope question.
+    - i need money
+    - no, i need cash, money! do you have it ?
+    - the beatles
+    - Hi i want to go palghar
+    - I want to go palghar
+    - gsaf
+    - expert of rasa
+    - i want play ball
+    - flight catch up
+    - coronavirus
+    - have you heard of corona?
+    - where do i type in commandy
+    - where to type in commands
+    - kiss me
+    - you have to
+    - sfasd
+    - asdkjasdhjkasd
+    - j  bhbhj
+    - eshdtjfjfyk
+    - drhdtjfjfyj
+    - sudo reboot
+    - asdfgasd
+    - asdfgasdas

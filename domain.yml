@@ -1,0 +1,246 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- justLoggedInWhileChatting
+- justLoggedIn
+- justLoggedOutWhileChatting
+- justLoggedOut
+- affirm
+- deny
+- express_gratitude
+- greet
+- goodbye
+- choice_additionalHelp
+- choice_noMoreHelp
+- choice_goodFeedback
+- choice_badFeedback
+- choice_otherFeedback
+- choice_inform_about_eCommerce
+- faq
+- choice_inform_about_product
+- choice_repeat_last_order
+- choice_change_account_info
+- choice_logIn
+- choice_createAnAccount
+- choice_changeUserFirstName
+- give_firstName
+- choice_changeUserEmailAdress
+- give_emailAdress
+- choice_suggest_product
+- choice_custom_request
+- bot_challenge
+- chitchat
+- out_of_scope
+- nlu_fallback
+entities:
+- first_name
+- email_adress
+- language
+slots:
+  customRequestEmailAdress:
+    type: text
+    influence_conversation: false
+  customRequestId:
+    type: text
+    influence_conversation: false
+  customRequestText:
+    type: text
+    influence_conversation: false
+  otherFeedback:
+    type: text
+    influence_conversation: false
+  searchedProducts:
+    type: text
+    influence_conversation: false
+  suggestedProduct:
+    type: text
+    influence_conversation: false
+  userIsLoggedIn:
+    type: text
+    influence_conversation: true
+  userIsNotLoggedIn:
+    type: text
+    influence_conversation: true
+  userNewEmailAdress:
+    type: text
+    influence_conversation: false
+  userNewFirstName:
+    type: text
+    influence_conversation: false
+responses:
+  utter_youAreIndeedLoggedIn:
+  - text: You are indeed logged in to the website at the moment!
+  utter_sorryYouAreNotLoggedIn:
+  - text: Sorry, you are not logged in to the website at the moment...
+  utter_pleaseLogIn:
+  - buttons:
+    - payload: /choice_additionalHelp
+      title: I need something else
+    - payload: /choice_noMoreHelp
+      title: I don't need help anymore
+    text: Please click [HERE](login) to be redirected to our login form.
+  utter_justLoggedInWhileChatting:
+  - text: I saw that you have just now logged in correctly!
+  utter_justLoggedOutWhileChatting:
+  - text: I saw you that you have just logged out from the website.
+  utter_welcome:
+  - text: Welcome to our website!
+  utter_askAdditionalHelp:
+  - buttons:
+    - payload: /choice_additionalHelp
+      title: I need more help
+    - payload: /choice_noMoreHelp
+      title: I don't need help anymore
+    text: Do you need more help?
+  utter_beforeYouGo:
+  - text: 1 minute please before you go
+  utter_askToProvideFeedback:
+  - buttons:
+    - payload: /choice_goodFeedback
+      title: Good
+    - payload: /choice_badFeedback
+      title: Bad
+    - payload: /choice_otherFeedback
+      title: Other
+    text: What did you think of your chat experience with me in general? Your feedback
+      will help me improve myself in the future.
+  utter_ask_otherFeedback:
+  - text: I am listening, give me your opinion.
+  utter_feedbackProvided:
+  - text: Thanks for the feedback!
+  utter_howCanIhelpYou:
+  - buttons:
+    - payload: /choice_inform_about_eCommerce
+      title: Inform me about the company
+    - payload: /choice_inform_about_product
+      title: Inform me about a product
+    - payload: /choice_change_account_info
+      title: Change my account information
+    - payload: /choice_suggest_product
+      title: Suggest a product
+    - payload: /choice_custom_request
+      title: Make another request
+    text: 'Tell me which of these options would you like me to help you with:'
+  utter_inform_about_eCommerce:
+  - buttons:
+    - payload: General information
+      title: General information
+    - payload: About the creator
+      title: About the creator
+    - payload: Customer service number
+      title: Customer service number
+    - payload: Time of creation
+      title: Time of creation
+    text: What do you want to know exactly about the company?
+  utter_faq/eCommerce_info:
+  - text: eCommerce is a website template created by Amine Zaamoun during his internship
+      at Deutsche Telekom in Data Science to show how to concretely integrate a chatbot.
+  utter_faq/creator:
+  - text: The creator of this chatbot and website template is Amine Zaamoun. He is
+      currently finishing his Data Scientist internship at Deutsche Telekom and is
+      in his 4th year of engineering school.
+  utter_faq/customer_service_number:
+  - text: The customer service number is +33 7 60 63 11 65.
+  utter_faq/when_was_eCommerce_created:
+  - text: This website template was created at the beginning of September 2020 to
+      meet the needs of Amine Zaamoun's second internship assignment at Deutsche Telekom.
+  utter_ask_searchedProducts:
+  - text: Which products do you want to inquire about? (Please write only letters
+      and at least 3)
+  utter_changeAccountInfoIfUserIsNotLoggedIn:
+  - text: You must be logged in to change your account information...
+  utter_changeAccountInfo:
+  - buttons:
+    - payload: /choice_changeUserFirstName
+      title: My first name
+    - payload: /choice_changeUserEmailAdress
+      title: My email adress
+    - payload: /choice_additionalHelp
+      title: I need more help
+    - payload: /choice_noMoreHelp
+      title: I don't need help anymore
+    text: Which account information would you like to change?
+  utter_ask_userNewFirstName:
+  - text: What is the new first name you want to use on your account?
+  utter_ask_userNewEmailAdress:
+  - text: What is the new email adress you want to use on your account?
+  utter_pleaseClickHereToChangeYourPassword:
+  - text: I understand that you want to change your password! Please [click here](#connexion)
+      to open the login form. Then please click on "J'ai oublié mon mot de passe"
+      and follow the instructions to change it.
+  utter_youre_welcome:
+  - text: You're welcome!
+  utter_ask_suggestedProduct:
+  - text: What would make you happy?
+  utter_goodbye:
+  - text: Good shopping on eCommerce, see you soon!
+  utter_understandRequestCustomerService:
+  - text: I understand that you want to make a request directly to the customer service.
+  utter_ask_customRequestEmailAdress:
+  - text: What's your email adress? This will allow us to contact you directly at
+      a later date.
+  utter_ask_customRequestText:
+  - text: Please write your request here. I would like to specify that it is preferable
+      to be as precise as possible so that the customer service can answer in the
+      best possible way.
+  utter_bot_challenge:
+  - text: I am a eAssistant, eCommerce's official chatbot! I was developed by Amine
+      Zaamoun and powered by Rasa.
+  utter_chitchat/ask_name:
+  - text: I am called eAssistant!
+  utter_chitchat/ask_how_you_are:
+  - text: I am fine thank you for asking!
+  utter_chitchat/ask_who_won_us_elections:
+  - text: Joe Biden is the new president of the United States.
+  utter_chitchat/ask_languages_bot:
+  - text: I only speak and understand English for the moment, but I will learn French
+      in the near future.
+  utter_chitchat/ask_time:
+  - text: It is the time it was yesterday at the same hour ;)
+  utter_out_of_scope/non_english:
+  - text: I only understand English, I'm sorry.
+  utter_out_of_scope/other:
+  - text: I can't help you with that, I'm sorry.
+  - text: I was not designed to answer this question.
+  - text: This is out of my area of expertise.
+  - text: I'm sorry I can't help you on this one.
+  - text: I'd rather you ask me something else.
+  - text: I don't have an opinion on this subject...
+  utter_rephrase:
+  - text: Please, rephrase your sentence, I'm not sure I understood.
+actions:
+- action_checkIfUserIsLoggedIn
+- action_insertNewFeedback
+- validate_searchedProducts_form
+- action_selectProductInformation
+- action_updateUserFirstName
+- action_updateUserEmailAdress
+- action_insertNewProductSuggestion
+- action_insertNewMailForArequest
+- action_addNewCustomRequest
+forms:
+  otherFeedback_form:
+    otherFeedback:
+    - type: from_text
+  customRequestEmailAdress_form:
+    customRequestEmailAdress:
+    - entity: email_adress
+      type: from_entity
+  customRequestText_form:
+    customRequestText:
+    - type: from_text
+  productSuggestion_form:
+    suggestedProduct:
+    - type: from_text
+  searchedProducts_form:
+    searchedProducts:
+    - type: from_text
+  userNewFirstName_form:
+    userNewFirstName:
+    - entity: first_name
+      type: from_entity
+  userNewEmailAdress_form:
+    userNewEmailAdress:
+    - entity: email_adress
+      type: from_entity
