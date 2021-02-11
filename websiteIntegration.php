@@ -26,7 +26,7 @@
     ?>
 
     <div id="webchat"></div>
-    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@0.11.12/lib/index.min.js"></script>
     <script>
       userSessionIdValue = jQuery("#userSessionIdHiddenField").val()
       viewsNumberValue = jQuery("#viewsNumberHiddenField").val()
